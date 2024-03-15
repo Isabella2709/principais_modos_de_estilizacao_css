@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducao ao CSS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+       <section id="principal-estilo"> 
+        <h1 class="title">Bom dia</h1>
+
+        <p class="paragrafo1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos nam veritatis temporibus quaerat rerum ullam sit esse nulla, 
+        at porro. Blanditiis suscipit doloribus minus incidunt reiciendis nam voluptate at dolore!</p>
+
+    <!--Existe a forma de adicionar o style direto na tag, mas fica bem poluido o codigo
+    e da mais trabalho-->
+
+    <!--Ja o style no proprio html fica mais simples de se feito e fica bem mais tranquilo de
+    estilizar varias tags de uma só vez, só usar a tag style aqui no proprio html-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, error! Enim ab, ea 
+        cupiditate tenetur accusantium, exercitationem veritatis nobis non nostrum officiis aut 
+        error dicta quasi nihil adipisci debitis minus?</p>
+
+       </section> 
+    
+       <section id="flex">
+        <!--aqui temos um id com o nome flex, no css seria usado como #flex-->
+        
+        <h2 class="titulo2">Flexbox</h2>
+        <!--Aqui temos uma class com id titulo2, no css seria usado como .titulo2-->
+        
+        <div class="papai">
+            <div class="filhos"></div>
+            <div class="filhos2"></div>
+            <div class="filhos"></div>
+            <div class="filhos2"></div>
+        </div>
+
+        <!--Perceba que as duas div esta dentro de outra div pai, um comando do pai, serve
+        para todas as outras divs bebes-->
+
+        
+       </section>
+       
+       <section id="grid-layout">
+        <div class="container-grid">
+            <div class="caixa"></div>
+            <div class="caixa"></div>
+            <div class="caixa"></div>
+            <div class="caixa"></div>
+            <div class="caixa"></div>
+            <div class="caixa"></div>
+        </div>
+       </section>
+
+       
+
+
+    </main>
+    
+
+
+</body>
+</html>

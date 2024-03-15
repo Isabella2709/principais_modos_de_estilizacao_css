@@ -1,0 +1,128 @@
+/*podemos usar o id e o class dessa forma, mas podemos ser ainda mais
+indicativos: usando por exemplo o section#principal-estilo de forma que 
+indique e o css não tenha duvida alguma de que é daquela tag que você 
+esta se refirindo e quer estilizar, apesar de eu não achar necessario é uma
+opção que pode ser util em algum momento*/
+
+
+h1{
+    color: blueviolet;
+}
+
+/*Existem a possibilidade de mudar a cor do h1 por exemplo, mas não se é 
+indicado fazer dessa forma, pois vc iria mudar todos os h1 dessa forma, o mais indicado é 
+fazer um class é ou um id para aquela tag em especifico lebrando que id você determina com #nome 
+e o class com um ponto .nome aqui no css*/
+
+
+#principal-estilo{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 50px;
+    border: 10px solid rgb(61, 49, 49);
+    border-radius: 20px;
+}
+
+/*Margin ele cria um espaçamento interno aqui no seu texto dentro da sua caixa de texto e 
+podemos adicionar aqui em outros elementos, existe a margem geral, e as margens da 
+esquerda= margin-left,da direita=margin-left, encima=margin=top e em baixo=margin-bottom.
+isso será muito util para não deixar um elemento colado um no outro*/
+
+/*Já o padding seria o preenchimento interno dentro daquela dimenssão, um texto ficar
+destacado daquele quadrado, mais para o centro ou mais espaçado dos lados. tendo as mesmas
+chamadas do margin, left,rigth,top,bottom */
+
+
+/*Quando usamos o color estamos nos referindo a cor da fonte ja quando usamos o background 
+color estamos nos referindo a cor do fundo de tela, ja o font-size é o tamnho da fonte*/
+
+/*Já o border coloca uma borda, tendo as propriedades expessura da borda ex: 10px, cor: color, e qual 
+o tipo de borda você quer colocar na borda: solid= borda quadrada ou raddius= borda redonda são os
+mais ultilizados, mas temos varios tipos de bordas aqui*/
+
+.title{
+    font-weight: 300;
+   
+}
+
+.paragrafo1{
+    line-height: 30px;
+    font-family: sans-serif;
+    
+}
+
+/*Já o font-weight é o peso da fonte, de forma que a letra fique com um aspecto mais fino
+e ou mais pesado de acordo com a numeração que você colocar, já o line-heigth é o espaçamento
+entre as linhas, já o font-size seria a familia da fonte e a tipografia de cada fonte, é claro
+que dependendo do sistema, algumas fontes podem não estarem disponiveis para uso, mas existe a
+possibilidade de exportar fontes para o seu css.. mas isso é assunto para mais pra frente */
+
+
+#flex .papai{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+#flex .papai .filhos{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+#flex .papai .filhos2{
+    width: 200px;
+    height: 400px;
+    background-color: blueviolet;
+}
+
+/*Sempre colocar uma altura= heigth e largura= width para poder posicionar os elementos.
+display flex serve para posicionar os elementos, um do lado do outro ou no centro, ou na esquerda
+e ou na direita, embaixo ou encima. mas com o margin conseguimos fazer isso, mas não de forma 
+responsiva, com o margin não ira ficar o padrao para todos os computadores, pois cada tela
+tem o seu pixel agora com o flex, todas as dimensões vã oser iguais*/
+
+/*Você não coloca o display flex nos bebes e sim no pai dos elementos, display flex deixa os 
+elementos sempre um do lado do outro e o gap da um espaço entre um e outro*/
+
+/*Justify-content:center alinha o elemento horizontalmente( NOS LADOS), temos as opções de alinhar a esquerda
+a direita e espaço entre os elementos caso tenha duvida acesse esse link: https://www.alura.com.br/artigos/css-guia-do-flexbox*/
+
+/*Aling-items alinham o conteudo verticalmente (EM PÉ) pode ser no centro ou em cima ou embaixo ou no meio*/
+
+
+/*IMPORTANTE: lembrando que dependendo se você colocar o felx direction de colum para row os conceitos 
+de  justify-content e aling-items muda!!!! */
+
+section#grid-layout{
+    margin: 60px;
+}
+
+#grid-layout .container-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap: 50px;
+
+}
+
+#grid-layout .container-grid .caixa{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+
+/*Esse é um outro tipo de display semelhante ao flex, mas alguns te mais facilidade com o grid e 
+outras tem mais facilidade com o flex*/
+
+/*Display grid é como se fosse grades, então podemos fazer pequenos cards com ele por exemplo fazer
+pequenos cards de noticias por exemplo #ficaadica*/
+
+/*Vocês podem definir quantas colunas tem no seu grid em grid template columns colocando 200px por
+exemplo ou com fr com o repeat, você coloca 3 coluns e 1 fr e quantidade de espaço que ela coloca
+na coluna e tambem pode configurar o grid-template-row= 500px você determina o tamanhã que aquela
+linha ocupa*/
